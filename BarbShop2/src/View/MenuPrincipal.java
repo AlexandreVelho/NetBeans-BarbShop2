@@ -6,7 +6,7 @@ package View;
 
 /**
  *
- * @author alexa
+ * @author alexandre
  */
 public class MenuPrincipal extends javax.swing.JFrame {
 
@@ -53,7 +53,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuItem1.setBackground(new java.awt.Color(204, 204, 204));
         jMenuItem1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jMenuItem1.setForeground(new java.awt.Color(255, 255, 255));
+        jMenuItem1.setForeground(new java.awt.Color(51, 51, 51));
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Imagens/Icones/cliente-icon.png"))); // NOI18N
         jMenuItem1.setText("Cliente");
         jMenuItem1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -61,7 +61,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuItem2.setBackground(new java.awt.Color(204, 204, 204));
         jMenuItem2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jMenuItem2.setForeground(new java.awt.Color(255, 255, 255));
+        jMenuItem2.setForeground(new java.awt.Color(51, 51, 51));
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Imagens/Icones/tesoura32-icon.png"))); // NOI18N
         jMenuItem2.setText("Serviço");
         jMenuCadastro.add(jMenuItem2);
