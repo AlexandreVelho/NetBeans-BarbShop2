@@ -6,19 +6,22 @@ package View;
 
 import javax.swing.ImageIcon;
 import java.awt.Image;
-
+import javax.swing.JOptionPane;
+import Controller.LoginController;
 /**
  *
- * @author alexa
+ * @author alexandre
  */
 public class Login extends javax.swing.JFrame {
+
+    private final LoginController controller;
 
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
-        
+        controller = new LoginController(this);
     }
 
     /**
@@ -32,6 +35,7 @@ public class Login extends javax.swing.JFrame {
 
         TextSenha = new javax.swing.JPasswordField();
         TextUsuario = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -51,8 +55,6 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TextSenha.setBackground(new java.awt.Color(255, 255, 255));
-        TextSenha.setForeground(new java.awt.Color(0, 0, 0));
         TextSenha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TextSenha.setMinimumSize(new java.awt.Dimension(64, 27));
         TextSenha.setPreferredSize(new java.awt.Dimension(64, 27));
@@ -63,11 +65,8 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(TextSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 450, 210, 40));
 
-        TextUsuario.setBackground(new java.awt.Color(255, 255, 255));
         TextUsuario.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        TextUsuario.setForeground(new java.awt.Color(0, 0, 0));
         TextUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        TextUsuario.setCaretColor(new java.awt.Color(0, 0, 0));
         TextUsuario.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         TextUsuario.setSelectedTextColor(new java.awt.Color(0, 0, 0));
         TextUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -77,17 +76,29 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(TextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 330, 210, 40));
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setText("Entrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 510, -1, -1));
+
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Senha");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 390, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 34)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Usuário");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Login");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 100, 50));
 
@@ -144,6 +155,15 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TextSenhaActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.controller.fizTarefa();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    public void exibeMensagem(String mensagem) {
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -183,6 +203,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel JLabelFundo;
     private javax.swing.JPasswordField TextSenha;
     private javax.swing.JTextField TextUsuario;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
