@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import javax.swing.JOptionPane;
 import Controller.LoginController;
+
 /**
  *
  * @author alexandre
@@ -159,6 +160,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.controller.fizTarefa();
     }//GEN-LAST:event_jButton1ActionPerformed
+    
 
     public void exibeMensagem(String mensagem) {
         JOptionPane.showMessageDialog(null, mensagem);
@@ -209,4 +211,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
+
+    
 }
