@@ -19,7 +19,7 @@ public class Main {
         System.out.println(usuario.getNome()); // Adicionado para imprimir o nome do usuário
         //Pessoa pessoa = new Pessoa(1, "Joao"); //ERRO Pessoa da classe abstract não pode ser instanciado
         //System.out.println(usuario.getNome());
-        Agendamento agendamento = new Agendamento(1, cliente, servico, 30, "25/03/2024 11:20");
+        Agendamento agendamento = new Agendamento(1, cliente, servico, 30, "25/03/2024 11:20", "14:00", "cliente vai atrasar");
         //Coloque um break point nesta linha para verificar os valores dos objetos
         System.out.println(agendamento.getCliente().getNome()); //Retorna o Cliente e o nome
     }

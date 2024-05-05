@@ -16,7 +16,7 @@ public class Agendamento {
 
     private String observação;
 
-    public Agendamento(int id, Cliente cliente, Servico serviço, float valor, String data) {
+    public Agendamento(int id, Cliente cliente, Servico serviço, int valor, String data, String string1, String cliente_vai_atrasar) {
         this.id = id;
         this.cliente = cliente;
         this.serviço = serviço;
